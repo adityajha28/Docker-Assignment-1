@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #0d47a1;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  
+  .docker-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  form {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #fff;
+    max-width: 300px;
+    background-color: #1e88e5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .docker-whale-icon {
+    margin-bottom: 15px;
+  }
+  
+  .docker-whale-icon img {
+    width: 80px; 
+    height: auto; 
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0097a7;
+  }
+  
+  #response {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+    background-color: #e1f5fe;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    animation: floatAnimation 2s ease-in-out infinite alternate; 
+  }
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px); 
+    }
+  }
+  
+  #response.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

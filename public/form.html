@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Docker Form</title>
+</head>
+<body>
+  <div class="docker-form-container">
+    <h2>Docker Form</h2>
+    <form id="myForm" action="/submit-form" method="post">
+      <label for="name">Enter Your Name:</label>
+      <div class="docker-whale-icon">
+        <img src="https://miro.medium.com/v2/resize:fit:601/0*1XzkA-KeQkc2ugix.png" alt="Docker Whale">
+      </div>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="response"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
