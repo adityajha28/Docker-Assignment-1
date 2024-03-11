@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:891377367684:task-definition/AdityaTaskDefinition:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:891377367684:task-definition/AdityaTaskDefinition01:1",
     "containerDefinitions": [
         {
-            "name": "nodejs-app",
-            "image": "891377367684.dkr.ecr.ap-south-1.amazonaws.com/nodejs-app:latest",
+            "name": "nodejs-app01",
+            "image": "891377367684.dkr.ecr.ap-south-1.amazonaws.com/nodejs-app01:latest",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "nodejs-app-3000-tcp",
+                    "name": "nodejs-app01-3000-tcp",
                     "containerPort": 3000,
                     "hostPort": 3000,
                     "protocol": "tcp",
@@ -24,7 +24,7 @@
                 "logDriver": "awslogs",
                 "options": {
                     "awslogs-create-group": "true",
-                    "awslogs-group": "/ecs/AdityaTaskDefinition",
+                    "awslogs-group": "/ecs/AdityaTaskDefinition01",
                     "awslogs-region": "ap-south-1",
                     "awslogs-stream-prefix": "ecs"
                 },
@@ -33,7 +33,7 @@
             "systemControls": []
         }
     ],
-    "family": "AdityaTaskDefinition",
+    "family": "AdityaTaskDefinition01",
     "executionRoleArn": "arn:aws:iam::891377367684:role/ecsTaskExecutionRole",
     "revision": 1,
     "volumes": [],
@@ -74,7 +74,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-03-11T10:10:26.941Z",
+    "registeredAt": "2024-03-11T11:07:56.221Z",
     "registeredBy": "arn:aws:iam::891377367684:root",
     "tags": []
 }
